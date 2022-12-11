@@ -1,13 +1,11 @@
-import { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
 
-import reactLogo from "./assets/react.svg";
+import { AppRoutes } from "./routes";
 
 export function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <p>Hello World!!!</p>
-    </div>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   );
 }
